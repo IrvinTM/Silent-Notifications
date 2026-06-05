@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget_container"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Section with Alarm Badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/widget_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Upcoming Silent Alarm"
+            android:textColor="#8E9199"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/widget_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• ALIVE"
+            android:textColor="#34D399"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Task Title -->
+    <TextView
+        android:id="@+id/widget_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="No Silent Reminders"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="2" />
+
+    <!-- Task Execution Details -->
+    <TextView
+        android:id="@+id/widget_task_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to add a new silent reminder"
+        android:textColor="#C6C6CD"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</LinearLayout>
